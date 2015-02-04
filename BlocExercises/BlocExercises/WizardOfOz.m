@@ -12,7 +12,6 @@
 
 - (BOOL) switchesFromBlackAndWhiteToColor {
     /* WORK HERE */
-    return NO;
     return YES;
 }
 
