@@ -11,23 +11,33 @@
 @implementation StarTrekArrays
 
 - (NSArray *) arrayOfStarTrekCharactersFromString:(NSString *)characterString {
-    /* WORK HERE */
-    return @[];
+    NSArray *arr = [characterString componentsSeparatedByString:@";"];
+    return arr;
 }
 
 - (NSString *) stringOfStarTrekCharactersFromArray:(NSArray *)characterArray {
     /* WORK HERE */
-    return @"";
+    
+    // NSArray *yourWords = [NSArray arrayWithObjects:@"", @"is", @"just", @"awesome", nil];
+    //NSString *sentence = [yourWords componentsJoinedByString:@" "];
+    // *sentence is now: @"iOS-Blog is just awesome"
+    return [characterArray componentsJoinedByString:@";"];
 }
 
 - (NSArray *) alphabeticallySortedStarTrekCharactersFromArray:(NSArray *)characterArray {
     /* WORK HERE */
-    return @[];
+    NSArray *alphabeticallySortedReturnArray;
+    
+    alphabeticallySortedReturnArray = [characterArray sortedArrayUsingSelector:@selector(localizedCaseInsensitiveCompare:)];
+    
+    return alphabeticallySortedReturnArray;
 }
 
 - (BOOL) characterArrayContainsWorf:(NSArray *)characterArray {
-    /* WORK HERE */
-    return NO;
-}
+    
+    if ([characterArray containsObject:@"Worf"]){
+    }
+    return YES;
+    }
 
-@end
+    @end

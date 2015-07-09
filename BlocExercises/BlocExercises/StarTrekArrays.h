@@ -29,7 +29,7 @@
 - (NSString *) stringOfStarTrekCharactersFromArray:(NSArray *)characterArray;
 
 /**
- Returns an array of alphabetically sorted character names.
+ Returns an.
  
  @param characterArray An array of unsorted character names, like @[@"Wesley", @"Q"].
  
