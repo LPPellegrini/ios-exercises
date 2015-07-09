@@ -36,8 +36,10 @@
 - (BOOL) characterArrayContainsWorf:(NSArray *)characterArray {
     
     if ([characterArray containsObject:@"Worf"]){
+        
+        return YES;
+    } else {
+        return NO;
     }
-    return YES;
-    }
-
+}
     @end
