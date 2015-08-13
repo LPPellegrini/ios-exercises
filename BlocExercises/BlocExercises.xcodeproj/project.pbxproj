@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		17E46D20194763D70018BD4C /* EqualityDeterminer.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E46D1F194763D70018BD4C /* EqualityDeterminer.m */; };
 		17E46D22194768C90018BD4C /* EqualityDeterminerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 17E46D21194768C90018BD4C /* EqualityDeterminerTests.m */; };
+		6323B48A1B7C0D9F00074C1E /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 6323B4891B7C0D9F00074C1E /* Car.m */; };
 		931AB0B11945063500B4FB76 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 931AB0B01945063500B4FB76 /* XCTest.framework */; };
 		931AB0B31945063500B4FB76 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 931AB0B21945063500B4FB76 /* Foundation.framework */; };
 		931AB0B51945063500B4FB76 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 931AB0B41945063500B4FB76 /* UIKit.framework */; };
@@ -37,6 +38,8 @@
 		17E46D1E194763D70018BD4C /* EqualityDeterminer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EqualityDeterminer.h; sourceTree = "<group>"; };
 		17E46D1F194763D70018BD4C /* EqualityDeterminer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EqualityDeterminer.m; sourceTree = "<group>"; };
 		17E46D21194768C90018BD4C /* EqualityDeterminerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EqualityDeterminerTests.m; sourceTree = "<group>"; };
+		6323B4881B7C0D9F00074C1E /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		6323B4891B7C0D9F00074C1E /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 		931AB0AD1945063500B4FB76 /* BlocExercises.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlocExercises.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		931AB0B01945063500B4FB76 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		931AB0B21945063500B4FB76 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -100,6 +103,8 @@
 		931AB0A21945060D00B4FB76 = {
 			isa = PBXGroup;
 			children = (
+				6323B4881B7C0D9F00074C1E /* Car.h */,
+				6323B4891B7C0D9F00074C1E /* Car.m */,
 				931AB0B61945063500B4FB76 /* BlocExercises */,
 				931AB0AF1945063500B4FB76 /* Frameworks */,
 				931AB0AE1945063500B4FB76 /* Products */,
@@ -303,6 +308,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6323B48A1B7C0D9F00074C1E /* Car.m in Sources */,
 				931AB0D1194660E000B4FB76 /* StringCheese.m in Sources */,
 				931AB0D31946639F00B4FB76 /* StringCheeseTests.m in Sources */,
 				931AB0C71945097100B4FB76 /* MarysAppleHandlerTests.m in Sources */,
