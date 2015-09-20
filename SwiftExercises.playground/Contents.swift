@@ -8,11 +8,19 @@ Strings
 
 func favoriteCheeseStringWithCheese(cheese: String) -> String {
     // WORK HERE
-    return cheese
+    
+    let cheese2 = "My favorite cheese is " + cheese
+    return cheese2
+    
 }
 
-let fullSentence = favoriteCheeseStringWithCheese("cheddar")
+let fullSentence = favoriteCheeseStringWithCheese("cheddar") + "this"
 // Make fullSentence say "My favorite cheese is cheddar."
+let somethingNew = fullSentence
+//let fullSentence = "My favorite cheese is \(Cheese)."
+
+fullSentence
+println(somethingNew)
 
 /*
 
@@ -20,13 +28,18 @@ Arrays & Dictionaries
 
 */
 
-let numberArray = [1, 2, 3, 4]
+var numberArray = [1, 2, 3, 4]
 // Add 5 to this array
 // WORK HERE
+numberArray.append(5)
 
-let numberDictionary = [1 : "one", 2 : "two", 3 : "three", 4 : "four"]
+var numberDictionary = [1 : "one", 2 : "two", 3 : "three", 4 : "four"]
+
 // Add 5 : "five" to this dictionary
 // WORK HERE
+println(numberDictionary)
+numberDictionary[5] = "five"
+println(numberDictionary)
 
 /*
 
@@ -36,9 +49,25 @@ Loops
 
 // Use a closed range loop to print 1 - 10, inclusively
 // WORK HERE
+for num in (1...10) { println(num) }
+
+var sum = 0
+for var i = 0; i <= 10; i++ {
+    sum += i
+}
+sum
+
+
 
 // Use a half-closed range loop to print 1 - 10, inclusively
 // WORK HERE
+
+for x in 1..<11
+{
+println(x)
+
+}
+
 
 let worf = [
     "name": "Worf",
@@ -58,13 +87,22 @@ let characters = [worf, picard]
 func favoriteDrinksArrayForCharacters(characters:Array<Dictionary<String, String>>) -> Array<String> {
     // return an array of favorite drinks, like ["prune juice", "tea, Earl Grey, hot"]
     // WORK HERE
-    return []
+    
+var drinks = Array<String>()
+for character in characters {
+drinks.append(character["favorite drink"]!)
+//return characters.filter(includeElement: characters.favoriteDrinks)
+
+return drinks
+
 }
 
 let favoriteDrinks = favoriteDrinksArrayForCharacters(characters)
 
 favoriteDrinks
 
+    
+    
 /*
 
 Functions
@@ -72,13 +110,17 @@ Functions
 */
 
 // Make a function that inputs an array of strings and outputs the strings separated by a semicolon
-
+    
 let strings = ["milk", "eggs", "bread", "challah"]
 
 // WORK HERE - make your function and pass `strings` in
-
+func stringsSeparatedBySemicolon(strings:Array<String>) -> String {
+return join(";", strings)
+}
+    
+    
 let expectedOutput = "milk;eggs;bread;challah"
-
+let output = stringsSeparatedBySemicolon(strings)
 /*
 
 Closures
@@ -89,3 +131,9 @@ let cerealArray = ["Golden Grahams", "Cheerios", "Trix", "Cap'n Crunch OOPS! All
 
 // Use a closure to sort this array alphabetically
 // WORK HERE
+let sortedCereal = sorted(cerealArray, { (s1: String, s2: String) -> Bool in
+return s1 < s2
+
+})
+
+
